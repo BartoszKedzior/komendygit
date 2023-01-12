@@ -1,0 +1,35 @@
+ser@bk-pc MINGW64 /h/sda/TestGit (master)
+$ git add TestGit1.txt
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ git commit TestGit1.txt
+warning: in the working copy of 'TestGit1.txt', LF will be replaced by CRLF the next time Git touches it
+[master 077a8c1] Druga duża zmiana
+ 1 file changed, 698 insertions(+), 1 deletion(-)
+
+ user@bk-pc MINGW64 /h/sda/TestGit (master)
+ $ touch TestGit2.txt
+
+ user@bk-pc MINGW64 /h/sda/TestGit (master)
+ $ git add TestGit2.txt
+
+ user@bk-pc MINGW64 /h/sda/TestGit (master)
+ $ git commit TestGit2.txt
+ [master 1a0546a] Nowy plik TestGit2.txt zawiera ostatnie komendy z Git Bash
+  1 file changed, 266 insertions(+)
+   create mode 100644 TestGit2.txt
+
+   user@bk-pc MINGW64 /h/sda/TestGit (master)
+   $ git checkout -b "New_Branch"
+   Switched to a new branch 'New_Branch'
+
+   user@bk-pc MINGW64 /h/sda/TestGit (New_Branch)
+   $ git branch
+   * New_Branch
+     master
+
+     user@bk-pc MINGW64 /h/sda/TestGit (New_Branch)
+     $ touch TestGit3.txt
+
+     user@bk-pc MINGW64 /h/sda/TestGit (New_Branch)
+     $
