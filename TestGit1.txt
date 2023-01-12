@@ -3,5 +3,702 @@ Nowy plik z dnia 12.01.2023r.
 Test GitBash
 
 Hello World
-:wq
+
+Modyfikacja pliku utworzonego z poziomu GitBash
+
+To pierwsza zmiana.
+
+Druga zmiana
+
+
+user@bk-pc MINGW64 ~
+$ ls
+'3D Objects'/             NTUSER.DAT
+ ansel/                   ntuser.dat.LOG1
+ AppData/                 ntuser.dat.LOG2
+ Apple/                   NTUSER.DAT{86e1f8ce-9fcd-11eb-81bf-2c4d5455ef19}.TM.blf
+ Contacts/                NTUSER.DAT{86e1f8ce-9fcd-11eb-81bf-2c4d5455ef19}.TMContainer00000000000000000001.regtrans-ms
+ Cookies@                 NTUSER.DAT{86e1f8ce-9fcd-11eb-81bf-2c4d5455ef19}.TMContainer00000000000000000002.regtrans-ms
+'Creative Cloud Files'/   ntuser.ini
+ CSECDViewer/            'Obrazy — skrót.lnk'*
+'Dane aplikacji'@         orangetest5
+ Desktop/                 Pictures/
+ Documents/               PrintHood@
+ Downloads/               Recent@
+ Favorites/              'Saved Games'/
+ Intel/                   SConstruct.txt
+ IntelGraphicsProfiles/   Searches/
+ Links/                   SendTo@
+ log.txt                  source/
+'Menu Start'@             Szablony@
+ MicrosoftEdgeBackups/    szkolenie
+ Moje                     testorange27022018
+'Moje dokumenty'@         testorange4
+ Music/                   testorangeping
+ NetHood@                'Ustawienia lokalne'@
+ netstat                  Videos/
+
+user@bk-pc MINGW64 ~
+$ cd
+Display all 63 possibilities? (y or n)
+
+user@bk-pc MINGW64 ~
+$ cd cd h:
+bash: cd: too many arguments
+
+user@bk-pc MINGW64 ~
+$ cd h:
+
+user@bk-pc MINGW64 /h
+$ cd
+$RECYCLE.BIN/                                  SDA/
+Baza Wiedzy/                                   SQL/
+Biblioteki/                                    Steam/
+Config.Msi/                                    System Volume Information/
+DumpStack.log.tmp                              Torrent/
+Games/                                         Transcribe/
+HT/                                            USER-KOMPUTER/
+MediaID.bin                                    WindowsImageBackup/
+Oracle/                                        XAMPP/
+PowerShell/                                    xampp-windows-x64-8.1.10-0-VS16-installer.exe
+qBittorrent/                                   zedge/
+
+user@bk-pc MINGW64 /h
+$ cd sda
+
+user@bk-pc MINGW64 /h/sda (master)
+$ ls
+ 1_1.png                                          'przypadek testowy.png'            zad3.png
+ 10.png                                           'przypadek testowy_gotowy.png'     zad4.png
+ 12.png                                           'raport z awarii - przyklad.png'   zad5.png
+ 13.png                                           'raport z awarii.png'              zad6.png
+ 14.png                                           'rozwiaenie 2.png'                 zad7.png
+ 2-2.png                                          'rozwiazanie zadaia.png'           zad7a.png
+'3.1 Techniki statyczne a proces testowania.odt'  'rozwiazanie zadania.jpg'          zad8.png
+ 3-3.png                                           smoke_sanity.png                  zad9.png
+'4. Techniki projektowania testów.odt'            'tabela decyzyjna.ods'            'Zadania i pytania.odt'
+ 4-4.png                                          'tablica decyzyjna.png'           'zadanie 1_09012023.png'
+ 6_5.png                                          'techniki statystyczne.png'       'zadanie 2 roziwaanie.jpg'
+ 6_6.png                                          'techniki statystyczne2.png'      'zadanie 2 rozw3iaanie.png'
+ 7-7.png                                          'techniki statystyczne3.png'      'zadanie 2_09012023.png'
+ bug.png                                          'techniki statystyczne4.png'      'zadanie 3 rozwiazane.png'
+'cart crash.png'                                  'techniki statystyczne5.png'      'zadanie 3_09012023.png'
+'cele testowania.png'                             'techniki statystyczne6.png'      'zadanie 4_09012023.png'
+'cele testowania_2.png'                           'techniki statystyczne7.png'      'zadanie 5_09012023.png'
+'co zawiera raport z awarii.png'                  'wyrocznia bledow.png'            'zadanie 6_09012023.png'
+ E2E.png                                           zad1.png                         'zadanie 6a_09012023.png'
+'Git Bask test'/                                   zad10.png                        'zadanie 8.jpg'
+ lekcje_13.12.2022.odt                             zad11.png                        'zadanie jajka.png'
+ media_markt_attachment.png                        zad12.png                        'zadanie_instrukcje i decyzje.png'
+ Narzedzia_testerskie_09.01.2023.odt              'zad13 - C.png'
+'Narzędzia zdtestpol120.pdf'                       zad2.png
+
+user@bk-pc MINGW64 /h/sda (master)
+$ cd Git\ Bask\ test/
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (master)
+$ ls -a
+./  ../  .git/  plik.txt
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        plik.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (master)
+$ git add plik.txt
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   plik.txt
+
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (master)
+$ git branch -m master main
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   plik.txt
+
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git commit -m "Initial commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'user@bk-pc.(none)')
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git config --user email "bartosz.kedzior@outlook.com"
+error: unknown option `user'
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git config user.email bartosz.kedzior@outlook.com
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git config user.name Bartosz
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$  $ git config user.name "Bartosz"
+bash: $: command not found
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git config user.name "Bartosz"
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git commit -m "Adding plik.txt file"
+[main (root-commit) 617207a] Adding plik.txt file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 plik.txt
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   plik.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git commit -m plik.txt
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   plik.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git add .
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git commit -m "Modify plik.txt"
+[main 76d7b10] Modify plik.txt
+ 1 file changed, 1 insertion(+)
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ vim plik.txt
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ ls
+plik.txt
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git commit -m plik.txt
+On branch main
+nothing to commit, working tree clean
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git commit -m "Zmieniony plik.txt"
+On branch main
+nothing to commit, working tree clean
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git add "Modify plik.txt"
+fatal: pathspec 'Modify plik.txt' did not match any files
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git commit -a
+On branch main
+nothing to commit, working tree clean
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git branch
+* main
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git log
+commit 76d7b107658d45adad38e352c3bca38c8f91e2c1 (HEAD -> main)
+Author: Bartosz <bartosz.kedzior@outlook.com>
+Date:   Thu Jan 12 18:28:21 2023 +0100
+
+    Modify plik.txt
+
+commit 617207addf31d45f8814aa73c2c49226db686c2b
+Author: Bartosz <bartosz.kedzior@outlook.com>
+Date:   Thu Jan 12 18:15:05 2023 +0100
+
+    Adding plik.txt file
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ adding plik
+plik.txt   plik1.txt  plik2.txt
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ adding plik1.txt
+bash: adding: command not found
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ touch plik1.txt
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ touch plik2.txt
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ ls
+plik.txt  plik1.txt  plik2.txt
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git add plik1.txt
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git add plik2.txt
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ ls
+plik.txt  plik1.txt  plik2.txt
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git commit "Modify Plik2.txt"
+error: pathspec 'Modify Plik2.txt' did not match any file(s) known to git
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git commit -a
+Aborting commit due to empty commit message.
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git commit -a "Modify plik2.txt"
+fatal: paths 'Modify plik2.txt ...' with -a does not make sense
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   plik1.txt
+        new file:   plik2.txt
+
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git branch
+* main
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git commit -a
+[main 4b1d6ed] pierwsze zmiany
+ 2 files changed, 1 insertion(+)
+ create mode 100644 plik1.txt
+ create mode 100644 plik2.txt
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git commit -m
+error: switch `m' requires a value
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git commit - m plik2.txt
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'm' did not match any file(s) known to git
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git log
+commit 4b1d6edca942292b9e5715099dde41847ea692f5 (HEAD -> main)
+Author: Bartosz <bartosz.kedzior@outlook.com>
+Date:   Thu Jan 12 18:51:26 2023 +0100
+
+    pierwsze zmiany
+
+commit 76d7b107658d45adad38e352c3bca38c8f91e2c1
+Author: Bartosz <bartosz.kedzior@outlook.com>
+Date:   Thu Jan 12 18:28:21 2023 +0100
+
+    Modify plik.txt
+
+commit 617207addf31d45f8814aa73c2c49226db686c2b
+Author: Bartosz <bartosz.kedzior@outlook.com>
+Date:   Thu Jan 12 18:15:05 2023 +0100
+
+    Adding plik.txt file
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git add .
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ git commit -m "Kocham puszka"
+[main 30209f8] Kocham puszka
+ 1 file changed, 1 insertion(+)
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ mkdir nowy folder
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ cd
+.git/      folder/    nowy/      plik.txt   plik1.txt  plik2.txt
+
+user@bk-pc MINGW64 /h/sda/Git Bask test (main)
+$ cd nowy/
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ git ini
+git: 'ini' is not a git command. See 'git --help'.
+
+The most similar commands are
+        init
+        gui
+        init-db
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ git init
+Initialized empty Git repository in H:/SDA/Git Bask test/nowy/.git/
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (master)
+$ ls -lsh
+total 0
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (master)
+$ ls -lsha
+total 8,0K
+   0 drwxr-xr-x 1 user 197608 0 sty 12 19:13 ./
+4,0K drwxr-xr-x 1 user 197608 0 sty 12 19:12 ../
+4,0K drwxr-xr-x 1 user 197608 0 sty 12 19:13 .git/
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (master)
+$ ls -lsha .git
+total 11K
+4,0K drwxr-xr-x 1 user 197608   0 sty 12 19:13 ./
+   0 drwxr-xr-x 1 user 197608   0 sty 12 19:13 ../
+1,0K -rw-r--r-- 1 user 197608 112 sty 12 19:13 config
+1,0K -rw-r--r-- 1 user 197608  73 sty 12 19:13 description
+1,0K -rw-r--r-- 1 user 197608  23 sty 12 19:13 HEAD
+4,0K drwxr-xr-x 1 user 197608   0 sty 12 19:13 hooks/
+   0 drwxr-xr-x 1 user 197608   0 sty 12 19:13 info/
+   0 drwxr-xr-x 1 user 197608   0 sty 12 19:13 objects/
+   0 drwxr-xr-x 1 user 197608   0 sty 12 19:13 refs/
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (master)
+$ add .
+bash: add: command not found
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (master)
+$ git add .
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (master)
+$ git commit -m "Pierwsze zmiany"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'user@bk-pc.(none)')
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (master)
+$ git config --global user.email "bartosz.kedzior@outlook.com"
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (master)
+$ git config --global user.name "Bartosz"
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (master)
+$ git commit -m "Pierwsze zmiany"
+[master (root-commit) 57f0eab] Pierwsze zmiany
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Nowyplik1.txt
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (master)
+$ git checkout - b "nowy_branch"
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'b' did not match any file(s) known to git
+error: pathspec 'nowy_branch' did not match any file(s) known to git
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (master)
+$ git checkout -b "Nowy_Branch"
+Switched to a new branch 'Nowy_Branch'
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (Nowy_Branch)
+$ git branch
+* Nowy_Branch
+  master
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (Nowy_Branch)
+$ git add .
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (Nowy_Branch)
+$ commit -m "Pierwsze_zmiany_w_nowej_branch"
+bash: commit: command not found
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (Nowy_Branch)
+$ git commit -m "Pierwsze zmiany"
+[Nowy_Branch 01f9cf5] Pierwsze zmiany
+ 3 files changed, 3 insertions(+)
+ create mode 100644 Nowyplik3.txt
+ create mode 100644 Nowyplik4.txt
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (Nowy_Branch)
+$ git branch -m master main
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (Nowy_Branch)
+$ git log
+commit 01f9cf5e646dca6947a569aa6370f9bcae774c6a (HEAD -> Nowy_Branch)
+Author: Bartosz <bartosz.kedzior@outlook.com>
+Date:   Thu Jan 12 19:27:10 2023 +0100
+
+    Pierwsze zmiany
+
+commit 57f0eab4c0dc988e6d8826649db0b272448a908d (main)
+Author: Bartosz <bartosz.kedzior@outlook.com>
+Date:   Thu Jan 12 19:20:46 2023 +0100
+
+    Pierwsze zmiany
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (Nowy_Branch)
+$ git status
+On branch Nowy_Branch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Nowyplik1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (Nowy_Branch)
+$ git add .
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (Nowy_Branch)
+$ git commit -m "Update Nowyplik1"
+[Nowy_Branch 4d80479] Update Nowyplik1
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (Nowy_Branch)
+$ git checkout main
+Switched to branch 'main'
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ git branch
+  Nowy_Branch
+* main
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ git checkout Nowy_Branch
+Switched to branch 'Nowy_Branch'
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (Nowy_Branch)
+$ git checkout main
+Switched to branch 'main'
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ git branch
+  Nowy_Branch
+* main
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ got merge Nowy_Branch
+bash: got: command not found
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ git merge Nowy_Branch
+Updating 57f0eab..4d80479
+Fast-forward
+ Nowyplik1.txt | 1 +
+ Nowyplik3.txt | 1 +
+ Nowyplik4.txt | 1 +
+ 3 files changed, 3 insertions(+)
+ create mode 100644 Nowyplik3.txt
+ create mode 100644 Nowyplik4.txt
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ git remote add origin https://github.com/BartoszKedzior/PracticeGitHub.git
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ git push -u origin main
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (11/11), 878 bytes | 292.00 KiB/s, done.
+Total 11 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/BartoszKedzior/PracticeGitHub.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ git add .
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ git commit -m "test push"
+[main dc56cb9] test push
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 357 bytes | 357.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/BartoszKedzior/PracticeGitHub.git
+   4d80479..dc56cb9  main -> main
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ cd
+.git/          Nowyplik1.txt  Nowyplik3.txt  Nowyplik4.txt
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ cd cd sda
+bash: cd: too many arguments
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ cd /h/sda
+
+user@bk-pc MINGW64 /h/sda (master)
+$ mkdir TestGit
+
+user@bk-pc MINGW64 /h/sda (master)
+$ cd T
+tabela decyzyjna.ods        techniki statystyczne3.png  techniki statystyczne7.png
+tablica decyzyjna.png       techniki statystyczne4.png  TestGit/
+techniki statystyczne.png   techniki statystyczne5.png
+techniki statystyczne2.png  techniki statystyczne6.png
+
+user@bk-pc MINGW64 /h/sda (master)
+$ cd TestGit
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ touch TestGit1.txt
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ vin TestGit1.txt
+bash: vin: command not found
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ vi
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ vi TestGit1.txt
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ git init
+Initialized empty Git repository in H:/SDA/TestGit/.git/
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ git add .
+warning: in the working copy of 'TestGit1.txt', LF will be replaced by CRLF the next time Git touches it
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   TestGit1.txt
+
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ vi TestGit1.txt
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ git commit -m "Pierwsza zmiana"
+[master (root-commit) 44ce271] Pierwsza zmiana
+ 1 file changed, 7 insertions(+)
+ create mode 100644 TestGit1.txt
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$
+
 
