@@ -1,0 +1,7 @@
+
+Nowy plik z dnia 12.01.2023r. 
+Test GitBash
+
+Hello World
+:wq
+
