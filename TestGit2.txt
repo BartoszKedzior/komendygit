@@ -1,0 +1,266 @@
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (master)
+$ git commit -m "Pierwsze zmiany"
+[master (root-commit) 57f0eab] Pierwsze zmiany
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Nowyplik1.txt
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (master)
+$ git checkout - b "nowy_branch"
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'b' did not match any file(s) known to git
+error: pathspec 'nowy_branch' did not match any file(s) known to git
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (master)
+$ git checkout -b "Nowy_Branch"
+Switched to a new branch 'Nowy_Branch'
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (Nowy_Branch)
+$ git branch
+* Nowy_Branch
+  master
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (Nowy_Branch)
+$ git add .
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (Nowy_Branch)
+$ commit -m "Pierwsze_zmiany_w_nowej_branch"
+bash: commit: command not found
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (Nowy_Branch)
+$ git commit -m "Pierwsze zmiany"
+[Nowy_Branch 01f9cf5] Pierwsze zmiany
+ 3 files changed, 3 insertions(+)
+ create mode 100644 Nowyplik3.txt
+ create mode 100644 Nowyplik4.txt
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (Nowy_Branch)
+$ git branch -m master main
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (Nowy_Branch)
+$ git log
+commit 01f9cf5e646dca6947a569aa6370f9bcae774c6a (HEAD -> Nowy_Branch)
+Author: Bartosz <bartosz.kedzior@outlook.com>
+Date:   Thu Jan 12 19:27:10 2023 +0100
+
+    Pierwsze zmiany
+
+commit 57f0eab4c0dc988e6d8826649db0b272448a908d (main)
+Author: Bartosz <bartosz.kedzior@outlook.com>
+Date:   Thu Jan 12 19:20:46 2023 +0100
+
+    Pierwsze zmiany
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (Nowy_Branch)
+$ git status
+On branch Nowy_Branch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Nowyplik1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (Nowy_Branch)
+$ git add .
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (Nowy_Branch)
+$ git commit -m "Update Nowyplik1"
+[Nowy_Branch 4d80479] Update Nowyplik1
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (Nowy_Branch)
+$ git checkout main
+Switched to branch 'main'
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ git branch
+  Nowy_Branch
+* main
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ git checkout Nowy_Branch
+Switched to branch 'Nowy_Branch'
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (Nowy_Branch)
+$ git checkout main
+Switched to branch 'main'
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ git branch
+  Nowy_Branch
+* main
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ got merge Nowy_Branch
+bash: got: command not found
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ git merge Nowy_Branch
+Updating 57f0eab..4d80479
+Fast-forward
+ Nowyplik1.txt | 1 +
+ Nowyplik3.txt | 1 +
+ Nowyplik4.txt | 1 +
+ 3 files changed, 3 insertions(+)
+ create mode 100644 Nowyplik3.txt
+ create mode 100644 Nowyplik4.txt
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ git remote add origin https://github.com/BartoszKedzior/PracticeGitHub.git
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ git push -u origin main
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (11/11), 878 bytes | 292.00 KiB/s, done.
+Total 11 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/BartoszKedzior/PracticeGitHub.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ git add .
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ git commit -m "test push"
+[main dc56cb9] test push
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 357 bytes | 357.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/BartoszKedzior/PracticeGitHub.git
+   4d80479..dc56cb9  main -> main
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ cd
+.git/          Nowyplik1.txt  Nowyplik3.txt  Nowyplik4.txt
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ cd cd sda
+bash: cd: too many arguments
+
+user@bk-pc MINGW64 /h/sda/Git Bask test/nowy (main)
+$ cd /h/sda
+
+user@bk-pc MINGW64 /h/sda (master)
+$ mkdir TestGit
+
+user@bk-pc MINGW64 /h/sda (master)
+$ cd T
+tabela decyzyjna.ods        techniki statystyczne3.png  techniki statystyczne7.png
+tablica decyzyjna.png       techniki statystyczne4.png  TestGit/
+techniki statystyczne.png   techniki statystyczne5.png
+techniki statystyczne2.png  techniki statystyczne6.png
+
+user@bk-pc MINGW64 /h/sda (master)
+$ cd TestGit
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ touch TestGit1.txt
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ vin TestGit1.txt
+bash: vin: command not found
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ vi
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ vi TestGit1.txt
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ git init
+Initialized empty Git repository in H:/SDA/TestGit/.git/
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ git add .
+warning: in the working copy of 'TestGit1.txt', LF will be replaced by CRLF the next time Git touches it
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   TestGit1.txt
+
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ vi TestGit1.txt
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ git commit -m "Pierwsza zmiana"
+[master (root-commit) 44ce271] Pierwsza zmiana
+ 1 file changed, 7 insertions(+)
+ create mode 100644 TestGit1.txt
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ git commit -m "Druga zmiana"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   TestGit1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ vi TestGit.txt
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ vi TestGit1.txt
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ git commit -m "Druga zmiana"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   TestGit1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ git add .
+warning: in the working copy of 'TestGit1.txt', LF will be replaced by CRLF the next time Git touches it
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ git add TestGit1.txt
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
+$ git commit TestGit1.txt
+warning: in the working copy of 'TestGit1.txt', LF will be replaced by CRLF the next time Git touches it
+[master 077a8c1] Druga duża zmiana
+ 1 file changed, 698 insertions(+), 1 deletion(-)
+
+user@bk-pc MINGW64 /h/sda/TestGit (master)
